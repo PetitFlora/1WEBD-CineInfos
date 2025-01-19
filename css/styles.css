@@ -1,0 +1,186 @@
+
+/********************************************************** Variables ************************************************************/
+
+:root {
+    --off-white: #faf9f6;
+    --off-black: #313134;
+
+    --dark-blue: #023047;
+    --blue: #219EBC;
+    --light-blue: #8ECAE6;
+    --yellow: #FFB703;
+    --orange: #FB8500;
+}
+
+@font-face {
+    font-family: 'LexieReadable';
+    src: url('../font/LexieReadable-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LexieReadable';
+    src: url('../font/LexieReadable-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/********************************************************** General ************************************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'LexieReadable', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    line-height: 1.5;
+    color: var(--off-white);
+    background-color: var(--off-black);
+}
+
+main {
+    padding: 50px 20px;
+}
+
+/********************************************************** Texts ************************************************************/
+
+h1 {
+    font-size: 3em;
+    color: var(--blue);
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--light-blue);
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 0.8em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#search {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: inherit;
+    color: var(--yellow);
+    text-decoration: none;
+    border-radius: 10px;
+    border: var(--yellow) solid 2px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--yellow);
+    color: var(--off-black);
+}
+
+a {
+    color: inherit;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: var(--yellow);
+}
+
+.underline {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.underline:hover {
+    color: var(--yellow);
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    transition: width 0.2s ease;
+}
+
+.underline:hover::after {
+    width: 100%;
+}
+
+/********************************************************** Grid ************************************************************/
+
+.grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.4fr));
+    gap: 20px;
+    margin-bottom: 200px;
+}
+
+.card {
+    height: fit-content;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+}
+
+/*********************************************************** Menu *************************************************************/
+
+nav {
+    background-color: var(--off-black);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/************************************************************ Footer ************************************************************/
+
+footer {
+    min-height: 70vh;
+    padding: 40px 20px;
+    text-align: center;
+}
