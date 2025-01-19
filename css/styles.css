@@ -84,7 +84,7 @@ li {
 }
 
 .button {
-    display: inline-block;
+    text-align: center;
     padding: 10px 20px;
     background-color: inherit;
     color: var(--yellow);
@@ -97,6 +97,7 @@ li {
 .button:hover {
     background-color: var(--yellow);
     color: var(--off-black);
+    cursor: grab;
 }
 
 a {
