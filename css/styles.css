@@ -81,6 +81,7 @@ li {
     margin: 0 auto;
     display: block;
     width: 300px;
+    font-family: 'LexieReadable', sans-serif;
 }
 
 .button {
@@ -97,7 +98,7 @@ li {
 .button:hover {
     background-color: var(--yellow);
     color: var(--off-black);
-    cursor: grab;
+    cursor: pointer;
 }
 
 a {
