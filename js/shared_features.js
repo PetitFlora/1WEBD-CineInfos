@@ -14,12 +14,16 @@ function displayMovies(data, parent, nb) {
             title.textContent = movie.Title;
             
             const more = document.createElement('a');
-            // more.textContent = '...en savoir plus';
-            more.textContent = `${card.id}`;
+            more.textContent = '...en savoir plus';
             
             card.appendChild(image);
             card.appendChild(title);
             card.appendChild(more);
+
+            card.addEventListener("click", function() {
+                const imdb = movie.imdbID;
+                window.location.href = `movie.html?imdbID=${imdb}`;
+            });
             
             parent.appendChild(card);
         }
