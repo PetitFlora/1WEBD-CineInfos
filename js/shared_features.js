@@ -14,7 +14,7 @@ function displayMovies(data, parent, nb) {
             title.textContent = movie.Title;
             
             const more = document.createElement('a');
-            more.textContent = '...en savoir plus';
+            more.textContent = 'en savoir plus...';
             
             card.appendChild(image);
             card.appendChild(title);

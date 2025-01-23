@@ -103,11 +103,12 @@ li {
 
 a {
     color: inherit;
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: var(--yellow);
+    cursor: pointer;
 }
 
 .underline {
@@ -179,7 +180,7 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/************************************************************ Footer *************************************************************/
+/************************************************************* Movie *************************************************************/
 
 .film-infos {
     display: flex;
