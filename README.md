@@ -2,6 +2,8 @@
 
 Mini-projet de fin de module 1WEBD
 
+Voir le projet sur [GitHub](https://github.com/PetitFlora/1WEBD-CineInfos)
+
 ## Consigne
 
 Un cinéma d'un petit village isolé souhaite proposer des films à l'affiche pour attirer plus de jeunes des villages alentours.
@@ -14,7 +16,7 @@ Les données des films sont disponibles depuis la base de données de [OMDb](htt
 
 Vous allez avoir besoin de [demander une API Key](https://www.omdbapi.com/apikey.aspx) que vous recevrez par email et qui sera à utiliser dans l'URL pour les requêtes.
 
-Les requêtes auront cette forme : [https://www.omdbapi.com/?apikey="votre API Key"&s=transformers] (celle-ci fait une recherche pour avoir le premier film qui correspond au titre renseigné).
+Les requêtes auront cette forme : [https://www.omdbapi.com/?apikey=votreAPIKey&s=transformers] (celle-ci fait une recherche pour avoir le premier film qui correspond au titre renseigné).
 
 La base de données est en anglais, il est conseillé de renseigner les noms originaux des films pour faire une recherche. Par exemple : "Guardians of The Galaxy".
 
@@ -42,7 +44,7 @@ Il est fortement recommandé d'avoir un bundle (ou au moins un fichier JS) par p
 
 ### Critères de notation
 
-#### index.html (25pts)
+#### ***index.html*** (25pts)
 
 - Afficher quelques films (3 minimum) contenus par la base de données que vous considérez en tendance (5 pts)
 - Pour chaque film, les informations suivantes doivent êtres affichées : (5 pts)
@@ -52,7 +54,7 @@ Il est fortement recommandé d'avoir un bundle (ou au moins un fichier JS) par p
 - Bonus : Un petit résumé du film
 - Ajouter un bouton pour charger plus de films de 2024
 
-#### search.html (25pts)
+#### ***search.html*** (25pts)
 
 La page devra contenir :
 
@@ -67,7 +69,7 @@ Pour chaque résultat de la recherche affichée : (5 pts)
 - Le titre du film
 - Un lien pour en savoir plus (devra rediriger vers movie.html)
 
-#### movie.html (25pts)
+#### ***movie.html*** (25pts)
 
 - Le titre du film
 - Le poster du film
@@ -80,7 +82,7 @@ Bonus :
 - Les notes obtenues par le film
 - La date de sortie en DVD (formatée en français : jj/mm/aaaa)
 
-#### Git (25 pts)
+#### ***Git*** (25 pts)
 
 - La bonne gestion du dépôt distant sur GitHub (10 pts)
 - L'organisation des branches (10 pts)
